@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+#tarefas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.adicionar-tarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adicionar-tarefa input{
+    width: 350px;
+    height: 30px;
+}
+.adicionar-tarefa .adicionar{
+    border: none;
+    border-radius: 5px;
+    background-color: #9ab7d5;
+
+    width: 200px;
+    height: 30px;
+
+    margin-top: 10px;
+
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+
+}
+.adicionar-tarefa .adicionar:hover{
+    background-color: #1e4f91;
+    color: #9ab7d5;
+}
+
+.bloco-notas{
+    background-image: url('img/bloco-notas.png');
+    background-size: 500px 451px;
+
+    width: 500px;
+    height: 451px;
+}
+.bloco-notas .box{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.bloco-notas .box .part-tarefa{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.bloco-notas .box input{
+    width: 180px;
+    height: 30px;
+
+    border: none;
+}
+.bloco-notas .box .excluir{
+    width: 300px;
+    border: none;
+    background-color: white;
+    color: #1e4f91;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.bloco-notas .box .excluir:hover{
+    color: black;
+}
+
+@media screen and (max-width: 800px){
+    #tarefas{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .adicionar-tarefa input{
+        width: 300px;
+    } 
+    .bloco-notas{
+        background-size: 400px 451px;
+        width: 400px;
+
+        margin-top: 20px;
+    }
+    .bloco-notas .box{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+    .bloco-notas .box .part-tarefa{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bloco-notas .box input{
+        width: 180px;
+    }
+    .bloco-notas .box .excluir{
+        text-align: center;
+        width: 220px;
+    }
+
+}
